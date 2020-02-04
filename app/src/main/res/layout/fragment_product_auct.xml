@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingTop="10dp"
+    android:paddingRight="50dp"
+    android:weightSum="100"
+    tools:context=".fragment.ProductAuctionFragment"
+    >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/proImage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="40"-->
+        android:src="@mipmap/no_img" />
+    <ss.com.bannerslider.Slider
+        android:id="@+id/proImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        app:slider_defaultBanner="1"
+        app:slider_indicatorSize="10dp"
+        app:slider_interval="3000"
+        app:slider_loopSlides="true"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="60"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <TextView
+        android:id="@+id/proName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="10"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/proTimeExpiredLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian còn:"
+        android:textSize="20sp"
+        android:layout_below="@+id/proName"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlueLight"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/proTimeExpiredValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/proTimeExpiredLabel"
+        android:layout_below="@id/proName"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/proCurrentPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá hiện tại:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlueLight"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/proTimeExpiredLabel"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/proCurrentPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/proCurrentPriceLabel"
+        android:layout_below="@+id/proTimeExpiredValue"
+        android:layout_marginBottom="10dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/proBetsCurrentPriceLabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Mức cược:"-->
+        <!--android:textColor="@color/colorBlueLight"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20sp"-->
+
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_below="@+id/proCurrentPriceLabel"-->
+        <!--android:layout_marginBottom="10dp"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/proBetsCurrentPriceValue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_toRightOf="@id/proBetsCurrentPriceLabel"-->
+        <!--android:layout_below="@+id/proCurrentPriceValue"-->
+        <!--android:layout_marginBottom="10dp"/>-->
+    <TextView
+        android:id="@+id/proBetsPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá cược: "
+        android:textStyle="bold"
+        android:textColor="@color/colorBlueLight"
+        android:textSize="20sp"
+        android:layout_below="@+id/proCurrentPriceLabel"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColorHint="@color/colorAccent"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/proBetsPriceLabel"
+            android:layout_marginBottom="40dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+
+    <Button
+        android:layout_below="@+id/spinner"
+        android:id="@+id/btnGotoAuction"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_radius_full"
+        android:text="Đấu giá"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:backgroundTint="@color/colorPrimary" />
+</RelativeLayout>
+
+</LinearLayout>

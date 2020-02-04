@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/proImage"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="35"
+        android:src="@mipmap/no_img"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="65"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/proName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/proTimeExpired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Thời gian còn:"
+            />
+        <TextView
+            android:id="@+id/proCurrentPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Giá hiện tại:"
+            />
+        <!--<TextView-->
+            <!--android:id="@+id/proBetsCurrent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="Mức cược: 1.000.000 VNĐ"-->
+            <!--/>-->
+    </LinearLayout>
+
+</LinearLayout>

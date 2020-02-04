@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserBiddingFragment"
+    android:background="@color/corlorWindowBackground"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_product_current_bidding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

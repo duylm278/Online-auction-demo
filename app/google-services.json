@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "929173493089",
+    "firebase_url": "https://prc391-61b27.firebaseio.com",
+    "project_id": "prc391-61b27",
+    "storage_bucket": "prc391-61b27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929173493089:android:25abb426d5847c28",
+        "android_client_info": {
+          "package_name": "cloud.auction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929173493089-ssgpg56nvj8skf6tg22rsargcvin8d9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkFZ8JrmUFiJrOYkfnm_YAQSJudoAXNBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929173493089-ssgpg56nvj8skf6tg22rsargcvin8d9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

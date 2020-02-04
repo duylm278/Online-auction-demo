@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@mipmap/bg_auction"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:background="@color/corlorWindowBackground"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="duylm@gmail.com"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:hint="Mật Khẩu"
+        android:background="@color/corlorWindowBackground"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btbGoToLogin"
+        android:background="@drawable/button_radius_full"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:backgroundTint="@color/colorPrimary"
+        android:onClick="toLogin"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa có tài khoản?"
+            android:textSize="14sp"
+            android:editable="false"
+            android:onClick="toRegister"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/corlorWindowBackground"
+            android:focusable="false"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo tài khoản."
+            android:textSize="14sp"
+            android:editable="false"
+            android:onClick="toRegister"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlueLight"
+            android:backgroundTint="@color/corlorWindowBackground"
+            android:focusable="false"/>
+    </LinearLayout>
+
+</LinearLayout>
